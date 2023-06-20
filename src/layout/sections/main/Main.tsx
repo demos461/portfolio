@@ -1,12 +1,11 @@
 import React from 'react';
-import photoImg from '../../../assets/images/photo.webp';
 import styled from 'styled-components';
-import { FlexWrapper } from '../../../components/FlexWrapper';
+import { FlexWrapperStyled } from '../../../components/FlexWrapper.styled';
 
 export const Main = () => {
   return (
     <StyledMain>
-      <FlexWrapper align={'center'} justify={'space-around'}>
+      <FlexWrapperStyled align={'center'} justify={'space-around'}>
         <div>
           <span>Hi There</span>
           <h2>I am Khrapko Ilya</h2>
@@ -14,8 +13,8 @@ export const Main = () => {
           <button>Contact me!</button>
         </div>
 
-        <StyledImg src={photoImg} alt='photo' />
-      </FlexWrapper>
+        <StyledImg src='' alt='photo' />
+      </FlexWrapperStyled>
     </StyledMain>
   );
 };
