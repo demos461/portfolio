@@ -34,7 +34,6 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  background-color: aquamarine;
   display: flex;
   justify-content: center;
   align-items: center;

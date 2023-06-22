@@ -25,7 +25,6 @@ export const Contact = () => {
 };
 
 const StyledContact = styled.section`
-  background-color: darkcyan;
   min-height: 100vh;
 `;
 

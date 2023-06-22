@@ -4,6 +4,7 @@ import { ContainerStyled } from '../../components/Container.styled';
 import { Logo } from '../../components/logo/Logo';
 import { Menu } from '../../components/menu/Menu';
 import { FlexWrapperStyled } from '../../components/FlexWrapper.styled';
+import { theme } from '../../styles/Theme';
 
 export const Header = () => {
   return (
@@ -19,5 +20,5 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: greenyellow;
+  background-color: ${theme.colors.background};
 `;

@@ -28,7 +28,6 @@ const StyledImg = styled.img`
 
 const StyledMain = styled.main`
   min-height: 100vh;
-  background-color: lightpink;
 `;
 
 const MainTitle = styled.h1``;
