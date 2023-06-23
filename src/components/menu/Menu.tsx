@@ -2,44 +2,41 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../../styles/Theme';
 
+const menuItems = ['home', 'skills', 'projects', 'contacts'];
+
 export const Menu = () => {
   return (
     <StyledNav>
       <ul>
-        <li>
-          <a href=''>home</a>
-        </li>
-        <li>
-          <a href=''>skills</a>
-        </li>
-        <li>
-          <a href=''>projects</a>
-        </li>
-        <li>
-          <a href=''>contacts</a>
-        </li>
+        {menuItems.map((item, index) => (
+          <ListItem key={`${item}-${index}`}>
+            <NavLink href={'#'}>{item}</NavLink>
+          </ListItem>
+        ))}
       </ul>
     </StyledNav>
   );
 };
 
 const StyledNav = styled.nav`
-  padding: 30px 0;
   ul {
     display: flex;
     gap: 30px;
+  }
+`;
 
-    li > a {
-      color: ${theme.colors.primary};
+const ListItem = styled.li``;
 
-      &:hover {
-        color: ${theme.colors.secondary};
-      }
+const NavLink = styled.a`
+  color: ${theme.colors.primary};
+  font-weight: 500;
 
-      &:before {
-        content: '#';
-        color: ${theme.colors.accent};
-      }
-    }
+  &:hover {
+    color: ${theme.colors.secondary};
+  }
+
+  &:before {
+    content: '#';
+    color: ${theme.colors.accent};
   }
 `;

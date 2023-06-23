@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { FlexWrapperStyled } from '../../../components/FlexWrapper.styled';
 import { ContainerStyled } from '../../../components/Container.styled';
+import photoImg from '../../../assets/images/photo.png';
+import { theme } from '../../../styles/Theme';
+import { ButtonStyled } from '../../../components/Button.styled';
 
 export const Main = () => {
   return (
@@ -9,13 +12,18 @@ export const Main = () => {
       <ContainerStyled>
         <FlexWrapperStyled align={'center'} justify={'space-between'}>
           <div>
-            <span>Hi There</span>
-            <h2>I am Khrapko Ilya</h2>
+            <StyledSpan>Hi There</StyledSpan>
+            <SecondTitle>I am Khrapko Ilya</SecondTitle>
             <MainTitle>A front-end developer</MainTitle>
-            <button>Contact me!</button>
+            <Button>Contact me!</Button>
           </div>
-
-          <StyledImg src='' alt='photo' />
+          <div>
+            <StyledImg src={photoImg} alt='photo' />
+            <Status>
+              <Square />
+              <StatusText>Looking For A Job</StatusText>
+            </Status>
+          </div>
         </FlexWrapperStyled>
       </ContainerStyled>
     </StyledMain>
@@ -27,7 +35,44 @@ const StyledImg = styled.img`
 `;
 
 const StyledMain = styled.main`
-  min-height: 100vh;
+  padding: 150px;
+  display: flex;
 `;
 
-const MainTitle = styled.h1``;
+const StyledSpan = styled.span`
+  color: ${theme.colors.accent};
+  font-weight: 500;
+`;
+
+const MainTitle = styled.h1`
+  font-size: 32px;
+  color: ${theme.colors.accent};
+  font-weight: 700;
+`;
+
+const SecondTitle = styled.h2`
+  font-size: 32px;
+  font-weight: 500;
+  color: ${theme.colors.secondary};
+`;
+
+const Status = styled.div`
+  display: flex;
+  gap: 10px;
+  border: 1px solid ${theme.colors.primary};
+  padding: 10px;
+`;
+
+const StatusText = styled.span`
+  font-weight: 600;
+`;
+
+const Square = styled.div`
+  background-color: ${theme.colors.accent};
+  width: 1rem;
+  height: 1rem;
+`;
+
+const Button = styled(ButtonStyled)`
+  margin-top: 30px;
+`;

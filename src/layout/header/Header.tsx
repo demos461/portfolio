@@ -4,7 +4,6 @@ import { ContainerStyled } from '../../components/Container.styled';
 import { Logo } from '../../components/logo/Logo';
 import { Menu } from '../../components/menu/Menu';
 import { FlexWrapperStyled } from '../../components/FlexWrapper.styled';
-import { theme } from '../../styles/Theme';
 
 export const Header = () => {
   return (
@@ -20,5 +19,10 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: ${theme.colors.background};
+  padding: 30px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
 `;
