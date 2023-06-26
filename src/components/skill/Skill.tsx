@@ -10,12 +10,18 @@ type SkillPropsType = {
 export const Skill: FC<SkillPropsType> = ({ iconId, title }) => {
   return (
     <StyledSkill>
-      <Icon iconId={iconId} width={'115px'} height={'115px'} viewBox={'0 0 115 115'} />
+      <Icon iconId={iconId} width={'115'} height={'115'} viewBox={'0 0 115 115'} />
       <StyledTitle>{title}</StyledTitle>
     </StyledSkill>
   );
 };
 
-const StyledSkill = styled.div``;
+const StyledSkill = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+`;
 
 const StyledTitle = styled.h3``;

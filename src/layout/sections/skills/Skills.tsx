@@ -9,19 +9,22 @@ export const Skills = () => {
   return (
     <StyledSkills>
       <ContainerStyled>
-        <SectionTitleStyled>Skills</SectionTitleStyled>
-        <FlexWrapperStyled justify={'space-around'} wrap={'wrap'}>
+        <SectionTitleStyled>skills</SectionTitleStyled>
+        <FlexWrapperStyled justify={'center'} wrap={'wrap'} gap={'50px'}>
           <Skill iconId={'html'} title={'HTML'} />
           <Skill iconId={'css'} title={'CSS'} />
+          <Skill iconId={'sass'} title={'Sass'} />
+          <Skill iconId={'styled'} title={'Styled components'} />
+          <Skill iconId={'tailwind'} title={'Tailwindcss'} />
           <Skill iconId={'js'} title={'JavaScript'} />
+          <Skill iconId={'ts'} title={'TypeScript'} />
           <Skill iconId={'react'} title={'React'} />
-          <Skill iconId={'redux'} title={'Redux'} />
+          <Skill iconId={'redux'} title={'Redux/Redux Toolkit'} />
+          <Skill iconId={'git'} title={'Git'} />
         </FlexWrapperStyled>
       </ContainerStyled>
     </StyledSkills>
   );
 };
 
-const StyledSkills = styled.section`
-  min-height: 100vh;
-`;
+const StyledSkills = styled.section``;

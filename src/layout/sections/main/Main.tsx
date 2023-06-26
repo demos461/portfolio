@@ -21,7 +21,7 @@ export const Main = () => {
             <StyledImg src={photoImg} alt='photo' />
             <Status>
               <Square />
-              <StatusText>Looking For A Job</StatusText>
+              <StatusText>Open to suggestions</StatusText>
             </Status>
           </div>
         </FlexWrapperStyled>
