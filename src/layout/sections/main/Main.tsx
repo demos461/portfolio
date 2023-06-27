@@ -4,7 +4,7 @@ import { FlexWrapperStyled } from '../../../components/FlexWrapper.styled';
 import { ContainerStyled } from '../../../components/Container.styled';
 import photoImg from '../../../assets/images/photo.png';
 import { theme } from '../../../styles/Theme';
-import { ButtonStyled } from '../../../components/Button.styled';
+import { LinkStyled } from '../../../components/Link.styled';
 
 export const Main = () => {
   return (
@@ -73,6 +73,6 @@ const Square = styled.div`
   height: 1rem;
 `;
 
-const Button = styled(ButtonStyled)`
+const Button = styled(LinkStyled)`
   margin-top: 30px;
 `;

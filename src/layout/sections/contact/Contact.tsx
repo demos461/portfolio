@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FlexWrapperStyled } from '../../../components/FlexWrapper.styled';
 import { SectionTitleStyled } from '../../../components/SectionTitle.styled';
-import { ButtonStyled } from '../../../components/Button.styled';
+import { LinkStyled } from '../../../components/Link.styled';
 import { ContainerStyled } from '../../../components/Container.styled';
 
 export const Contact = () => {
@@ -16,7 +16,7 @@ export const Contact = () => {
             <Field />
             <Field />
             <Field as={'textarea'} />
-            <ButtonStyled type={'submit'}>Send</ButtonStyled>
+            <LinkStyled type={'submit'}>Send</LinkStyled>
           </StyledForm>
         </FlexWrapperStyled>
       </ContainerStyled>

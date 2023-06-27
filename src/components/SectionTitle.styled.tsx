@@ -18,9 +18,9 @@ export const SectionTitleStyled = styled.h2`
     display: inline-block;
     height: 0.5em;
     vertical-align: bottom;
-    width: 100%;
+    width: 50%;
     margin-right: -100%;
     margin-left: 10px;
-    border-top: 2px solid ${theme.colors.accent};
+    border-top: 1px solid ${theme.colors.accent};
   }
 `;

@@ -4,36 +4,61 @@ import { SectionTitleStyled } from '../../../components/SectionTitle.styled';
 import { FlexWrapperStyled } from '../../../components/FlexWrapper.styled';
 import { Project } from '../../../components/project/Project';
 import { ContainerStyled } from '../../../components/Container.styled';
+import todoImg from '../../../assets/images/todo.webp';
 
 export const Projects = () => {
   return (
     <StyledProjects>
       <ContainerStyled>
-        <SectionTitleStyled>projects &lt;~&gt;</SectionTitleStyled>
-        <FlexWrapperStyled justify={'space-around'} wrap={'wrap'}>
+        <SectionTitleStyled>projects</SectionTitleStyled>
+        <FlexWrapperStyled justify={'space-around'} wrap={'wrap'} gap={'15px'}>
           <Project
+            image={todoImg}
             title={'Todolist'}
-            stack={'Typescript React Redux'}
+            stack={'Typescript React Redux-Toolkit Formik React-router-dom Material UI '}
             description={'Todolist app'}
-            gitLink={'https://github.com/'}
+            gitLink={'https://github.com/demos461/react-todolist'}
+            demoLink={'https://demos461.github.io/react-todolist/'}
           />
           <Project
+            image={todoImg}
             title={'Todolist'}
-            stack={'Typescript React Redux'}
+            stack={'Typescript React Redux-Toolkit Formik React-router-dom Material UI '}
             description={'Todolist app'}
-            gitLink={'https://github.com/'}
+            gitLink={'https://github.com/demos461/react-todolist'}
+            demoLink={'https://demos461.github.io/react-todolist/'}
           />
           <Project
+            image={todoImg}
             title={'Todolist'}
-            stack={'Typescript React Redux'}
+            stack={'Typescript React Redux-Toolkit Formik React-router-dom Material UI '}
             description={'Todolist app'}
-            gitLink={'https://github.com/'}
+            gitLink={'https://github.com/demos461/react-todolist'}
+            demoLink={'https://demos461.github.io/react-todolist/'}
           />
           <Project
+            image={todoImg}
             title={'Todolist'}
-            stack={'Typescript React Redux'}
+            stack={'Typescript React Redux-Toolkit Formik React-router-dom Material UI '}
             description={'Todolist app'}
-            gitLink={'https://github.com/'}
+            gitLink={'https://github.com/demos461/react-todolist'}
+            demoLink={'https://demos461.github.io/react-todolist/'}
+          />
+          <Project
+            image={todoImg}
+            title={'Todolist'}
+            stack={'Typescript React Redux-Toolkit Formik React-router-dom Material UI '}
+            description={'Todolist app'}
+            gitLink={'https://github.com/demos461/react-todolist'}
+            demoLink={'https://demos461.github.io/react-todolist/'}
+          />
+          <Project
+            image={todoImg}
+            title={'Todolist'}
+            stack={'Typescript React Redux-Toolkit Formik React-router-dom Material UI '}
+            description={'Todolist app'}
+            gitLink={'https://github.com/demos461/react-todolist'}
+            demoLink={'https://demos461.github.io/react-todolist/'}
           />
         </FlexWrapperStyled>
       </ContainerStyled>
@@ -41,6 +66,4 @@ export const Projects = () => {
   );
 };
 
-const StyledProjects = styled.section`
-  min-height: 100vh;
-`;
+const StyledProjects = styled.section``;
