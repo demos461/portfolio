@@ -10,12 +10,12 @@ export const Main = () => {
   return (
     <StyledMain>
       <ContainerStyled>
-        <FlexWrapperStyled align={'center'} justify={'space-between'}>
+        <FlexWrapperStyled align={'center'} justify={'space-between'} wrap={'wrap'}>
           <div>
             <StyledSpan>Hi There</StyledSpan>
             <SecondTitle>I am Khrapko Ilya</SecondTitle>
             <MainTitle>A front-end developer</MainTitle>
-            <Button>Contact me!</Button>
+            <LinkStyled>Contact me!</LinkStyled>
           </div>
           <div>
             <StyledImg src={photoImg} alt='photo' />
@@ -48,6 +48,7 @@ const MainTitle = styled.h1`
   font-size: 32px;
   color: ${theme.colors.accent};
   font-weight: 700;
+  margin-bottom: 30px;
 `;
 
 const SecondTitle = styled.h2`
@@ -71,8 +72,4 @@ const Square = styled.div`
   background-color: ${theme.colors.accent};
   width: 1rem;
   height: 1rem;
-`;
-
-const Button = styled(LinkStyled)`
-  margin-top: 30px;
 `;
