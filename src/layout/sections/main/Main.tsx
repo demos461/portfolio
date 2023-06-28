@@ -15,7 +15,7 @@ export const Main = () => {
             <StyledSpan>Hi There</StyledSpan>
             <SecondTitle>I am Khrapko Ilya</SecondTitle>
             <MainTitle>A front-end developer</MainTitle>
-            <LinkStyled>Contact me!</LinkStyled>
+            <Button>Contact me!</Button>
           </div>
           <div>
             <StyledImg src={photoImg} alt='photo' />
@@ -48,7 +48,6 @@ const MainTitle = styled.h1`
   font-size: 32px;
   color: ${theme.colors.accent};
   font-weight: 700;
-  margin-bottom: 30px;
 `;
 
 const SecondTitle = styled.h2`
@@ -72,4 +71,9 @@ const Square = styled.div`
   background-color: ${theme.colors.accent};
   width: 1rem;
   height: 1rem;
+`;
+
+const Button = styled(LinkStyled)`
+  display: inline-block;
+  margin-top: 30px;
 `;

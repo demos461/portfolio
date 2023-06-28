@@ -6,7 +6,6 @@ type LinkPropsType = {
 };
 
 export const LinkStyled = styled.a<LinkPropsType>`
-  font-family: 'Montserrat', sans-serif;
   padding: 8px 16px;
   color: ${theme.colors.secondary};
   font-weight: 500;

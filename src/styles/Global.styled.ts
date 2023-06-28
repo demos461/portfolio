@@ -12,7 +12,7 @@ export const GlobalStyled = createGlobalStyle`
   
   body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.primary};
