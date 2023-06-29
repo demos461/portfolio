@@ -4,19 +4,28 @@ import { FlexWrapperStyled } from '../../../components/FlexWrapper.styled';
 import { SectionTitleStyled } from '../../../components/SectionTitle.styled';
 import { LinkStyled } from '../../../components/Link.styled';
 import { ContainerStyled } from '../../../components/Container.styled';
+import { theme } from '../../../styles/Theme';
 
 export const Contact = () => {
   return (
     <StyledContact>
       <ContainerStyled>
-        <SectionTitleStyled>Contact</SectionTitleStyled>
+        <SectionTitleStyled>contact</SectionTitleStyled>
         <FlexWrapperStyled justify={'center'} align={'center'}>
           <StyledForm>
-            <Field />
-            <Field />
-            <Field />
-            <Field as={'textarea'} />
-            <LinkStyled type={'submit'}>Send</LinkStyled>
+            <FlexWrapperStyled gap={'15px'}>
+              <Field placeholder={'Name'} />
+              <Field
+                placeholder={'Email'}
+                type={'email'}
+                pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
+              />
+            </FlexWrapperStyled>
+            <Field placeholder={'Title'} />
+            <Field as={'textarea'} placeholder={'Message'} />
+            <Button type={'submit'} as={'button'}>
+              Send
+            </Button>
           </StyledForm>
         </FlexWrapperStyled>
       </ContainerStyled>
@@ -24,9 +33,7 @@ export const Contact = () => {
   );
 };
 
-const StyledContact = styled.section`
-  min-height: 100vh;
-`;
+const StyledContact = styled.section``;
 
 const StyledForm = styled.form`
   display: flex;
@@ -34,8 +41,32 @@ const StyledForm = styled.form`
   gap: 15px;
   max-width: 570px;
   width: 100%;
+
+  textarea {
+    resize: none;
+    height: 120px;
+  }
 `;
 
 const Field = styled.input`
-  resize: none;
+  border: 1px solid ${theme.colors.primary};
+  font-family: 'JetBrains Mono', monospace;
+  color: ${theme.colors.secondary};
+  font-size: 16px;
+  background-color: transparent;
+  padding: 8px;
+  width: 100%;
+
+  &::placeholder {
+    color: ${theme.colors.primary};
+  }
+
+  &:focus-visible {
+    outline: 1px solid ${theme.colors.secondary};
+  }
+`;
+
+const Button = styled(LinkStyled)`
+  font-family: 'JetBrains Mono', monospace;
+  align-self: flex-start;
 `;

@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { LinkStyled } from '../Link.styled';
 import { theme } from '../../styles/Theme';
+import { FlexWrapperStyled } from '../FlexWrapper.styled';
 
 type ProjectPropsType = {
   image: string;
@@ -29,7 +30,7 @@ export const Project: FC<ProjectPropsType> = ({
       <DescriptionBlock>
         <ProjectTitle>{title}</ProjectTitle>
         <ProjectDescription>{description}</ProjectDescription>
-        <LinksBlock>
+        <FlexWrapperStyled gap={'15px'}>
           <LinkStyled href={gitLink} target={'_blank'}>
             GitHub
           </LinkStyled>
@@ -38,7 +39,7 @@ export const Project: FC<ProjectPropsType> = ({
               Demo
             </LinkStyled>
           )}
-        </LinksBlock>
+        </FlexWrapperStyled>
       </DescriptionBlock>
     </StyledProject>
   );
@@ -57,21 +58,18 @@ const DescriptionBlock = styled.div`
   gap: 15px;
 `;
 
-const LinksBlock = styled.div`
-  display: flex;
-  gap: 15px;
-`;
-
 const Image = styled.img`
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-bottom: 1px solid ${theme.colors.primary};
 `;
+
 const Stack = styled.div`
   border-bottom: 1px solid ${theme.colors.primary};
   padding: 10px;
 `;
+
 const ProjectTitle = styled.h3`
   color: ${theme.colors.secondary};
   font-weight: 500;
