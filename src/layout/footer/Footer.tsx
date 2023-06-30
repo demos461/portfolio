@@ -8,21 +8,24 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <ContainerStyled>
-        <FlexWrapperStyled direction={'column'} align={'center'}>
+        <FlexWrapperStyled direction={'column'} align={'center'} gap={'15px'}>
           <SocialList>
             <SocialItem>
-              <SocialLink>
+              <SocialLink href={'https://github.com/demos461'} target={'_blank'}>
                 <Icon iconId={'github'} />
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink>
+              <SocialLink
+                href={'https://www.linkedin.com/in/ilya-khrapko-5b2957215/'}
+                target={'_blank'}
+              >
                 <Icon iconId={'linkedin'} />
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink>
-                <Icon iconId={'email'} />
+              <SocialLink href={'https://t.me/demos461'} target={'_blank'}>
+                <Icon iconId={'telegram'} />
               </SocialLink>
             </SocialItem>
           </SocialList>
@@ -38,9 +41,12 @@ const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 40px 0;
 `;
 
-const SocialList = styled.ul``;
+const SocialList = styled.ul`
+  display: flex;
+`;
 
 const SocialItem = styled.li``;
 

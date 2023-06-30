@@ -33,7 +33,9 @@ export const Contact = () => {
   );
 };
 
-const StyledContact = styled.section``;
+const StyledContact = styled.section`
+  margin-bottom: 50px;
+`;
 
 const StyledForm = styled.form`
   display: flex;
