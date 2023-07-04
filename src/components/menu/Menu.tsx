@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import { theme } from '../../styles/Theme';
 
-const menuItems = ['home', 'skills', 'projects', 'contacts'];
+type MenuPropsType = {
+  menuItems: string[];
+};
 
-export const Menu = () => {
+export const Menu: FC<MenuPropsType> = ({ menuItems }) => {
   return (
     <StyledNav>
       <ul>
         {menuItems.map((item, index) => (
-          <ListItem key={`${item}-${index}`}>
+          <li key={`${item}-${index}`}>
             <NavLink href={'#'}>{item}</NavLink>
-          </ListItem>
+          </li>
         ))}
       </ul>
     </StyledNav>
@@ -23,9 +25,10 @@ const StyledNav = styled.nav`
     display: flex;
     gap: 30px;
   }
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 `;
-
-const ListItem = styled.li``;
 
 const NavLink = styled.a`
   color: ${theme.colors.primary};

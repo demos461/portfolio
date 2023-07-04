@@ -5,6 +5,11 @@ import { FlexWrapperStyled } from '../../../components/FlexWrapper.styled';
 import { Project } from '../../../components/project/Project';
 import { ContainerStyled } from '../../../components/Container.styled';
 import todoImg from '../../../assets/images/todo.webp';
+import pizzaImg from '../../../assets/images/pizza.png';
+import githubSearchImg from '../../../assets/images/githubSearch.png';
+import singoloImg from '../../../assets/images/singolo.png';
+import inctagramImg from '../../../assets/images/inctagram.png';
+import cardLearningImg from '../../../assets/images/cardlearning.png';
 
 export const Projects = () => {
   return (
@@ -18,7 +23,7 @@ export const Projects = () => {
           gap={'15px'}
         >
           <Project
-            image={todoImg}
+            image={inctagramImg}
             title={'Inctagram'}
             stack={'Typescript Next React-query Zustand Axios Tailwindcss'}
             description={'Social network for posting photos'}
@@ -38,7 +43,7 @@ export const Projects = () => {
             demoLink={'https://demos461.github.io/react-todolist/'}
           />
           <Project
-            image={todoImg}
+            image={pizzaImg}
             title={'Pizza'}
             stack={
               'Typescript React Redux-Toolkit Redux-persist React-router-dom Axios Sass'
@@ -50,7 +55,7 @@ export const Projects = () => {
             demoLink={'https://demos461.github.io/react-pizza-v2/'}
           />
           <Project
-            image={todoImg}
+            image={cardLearningImg}
             title={'Card learning'}
             stack={
               'Typescript React Redux-Toolkit React-hook-form React-router-dom Axios Sass'
@@ -71,7 +76,7 @@ export const Projects = () => {
             demoLink={'https://demos461.github.io/react-social-network/'}
           />
           <Project
-            image={todoImg}
+            image={githubSearchImg}
             title={'Github search'}
             stack={
               'Typescript React Redux-Toolkit RTK Query React-router-dom Tailwindcss'
@@ -88,7 +93,7 @@ export const Projects = () => {
             gitLink={'https://github.com/demos461/portfolio'}
           />
           <Project
-            image={todoImg}
+            image={singoloImg}
             title={'Singolo'}
             stack={'HTML CSS JavaScript'}
             description={'Landing page'}

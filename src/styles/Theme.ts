@@ -5,4 +5,8 @@ export const theme = {
     primary: '#ABB2BF',
     secondary: '#FFFFFF',
   },
+  media: {
+    tablet: 'screen and (max-width: 768px)',
+    mobile: 'screen and (max-width: 576px)',
+  },
 };
