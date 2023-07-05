@@ -10,7 +10,7 @@ export const Main = () => {
   return (
     <StyledMain>
       <ContainerStyled>
-        <FlexWrapperStyled align={'center'} justify={'space-between'} wrap={'wrap'}>
+        <FlexWrapperStyled align={'center'} justify={'space-around'} wrap={'wrap'}>
           <div>
             <StyledSpan>Hi There</StyledSpan>
             <SecondTitle>I am Khrapko Ilya</SecondTitle>
@@ -32,11 +32,16 @@ export const Main = () => {
 
 const StyledImg = styled.img`
   object-fit: cover;
+
+  @media ${theme.media.mobile} {
+    width: 320px;
+  }
 `;
 
 const StyledMain = styled.main`
-  padding: 150px;
   display: flex;
+  margin-top: 80px;
+  min-height: 70vh;
 `;
 
 const StyledSpan = styled.span`
