@@ -28,6 +28,11 @@ export const Footer = () => {
                 <Icon iconId={'telegram'} />
               </SocialLink>
             </SocialItem>
+            <SocialItem>
+              <SocialLink href={'mailto:ilya.khrapko.dev@gmail.com'} target={'_blank'}>
+                <Icon iconId={'email'} />
+              </SocialLink>
+            </SocialItem>
           </SocialList>
           <Copyright>© Copyright 2023. Made by Ilya Khrapko</Copyright>
         </FlexWrapperStyled>

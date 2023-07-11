@@ -4,12 +4,14 @@ import { SectionTitleStyled } from '../../../components/SectionTitle.styled';
 import { FlexWrapperStyled } from '../../../components/FlexWrapper.styled';
 import { Project } from '../../../components/project/Project';
 import { ContainerStyled } from '../../../components/Container.styled';
-import todoImg from '../../../assets/images/todo.webp';
 import pizzaImg from '../../../assets/images/pizza.png';
 import githubSearchImg from '../../../assets/images/githubSearch.png';
 import singoloImg from '../../../assets/images/singolo.png';
 import inctagramImg from '../../../assets/images/inctagram.png';
 import cardLearningImg from '../../../assets/images/cardlearning.png';
+import todolistImg from '../../../assets/images/todolist.png';
+import socialNetworkImg from '../../../assets/images/socialNetwork.png';
+import portfolioImg from '../../../assets/images/portfolio.png';
 
 export const Projects = () => {
   return (
@@ -31,7 +33,7 @@ export const Projects = () => {
             demoLink={'https://inctagram-main.vercel.app/auth/login'}
           />
           <Project
-            image={todoImg}
+            image={todolistImg}
             title={'Todolist'}
             stack={
               'Typescript React Redux-Toolkit Formik React-router-dom Axios Material UI'
@@ -66,7 +68,7 @@ export const Projects = () => {
             gitLink={'https://github.com/alkuzbl/friday_ignat'}
           />
           <Project
-            image={todoImg}
+            image={socialNetworkImg}
             title={'Social network'}
             stack={'Typescript React Redux-Toolkit Formik React-router-dom Axios Sass'}
             description={
@@ -86,7 +88,7 @@ export const Projects = () => {
             demoLink={'https://demos461.github.io/react-github-search/'}
           />
           <Project
-            image={todoImg}
+            image={portfolioImg}
             title={'Portfolio'}
             stack={'Typescript React Styled-component'}
             description={'You’re using it rn'}
